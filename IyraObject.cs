@@ -3,9 +3,6 @@
     public abstract class IyraObject<T> where T : IyraObject<T>
     {
         protected readonly T self;
-        protected IyraObject()
-        {
-            self = (T)this;
-        }
+        protected IyraObject() => self = (T)this;
     }
 }
